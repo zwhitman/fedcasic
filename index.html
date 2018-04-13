@@ -4,13 +4,21 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>fedcasic</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+		<!-- Particle assets -->
+		<link rel="stylesheet" href="css/particle.css">
+
+
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -24,25 +32,494 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+
+				<section> <!--slide 1 -->
+					<h2>Start at the end</h2>
+					<hr>
+					<h3>why dissemination should be a forethought</h3>
+				</section>
+
+				<section>
+					<!-- <section data-transition="fade-out">
+						housekeeping - let's just get this out of the way
+					</section> -->
+
+					<section data-transition="fade-in fade-out">
+						<div style="height:100vh;width:100vw;margin:-50px 0 0 -180px " id="particle-canvas"></div>
+						<h2 style="position:absolute;top:37%;color:rgba(0,0,0,.8);z-index:99999999;">we have a ton of data</h2>
+					</section>
+
+					<section data-background-image="./img/pipes.jpg" data-transition="fade-in">
+						<h2 style="color: rgba(255,255,255,.9)">
+							<span style="position:fixed;top:0;left:0">that</span>
+							<span style="position:fixed;top:100px;left:20%">we</span>
+							<span style="position:fixed;top:300px;left:40%">collect</span>
+							<span style="position:fixed;top:500px;left:60%">differently</span>
+
+						</h2>
+					</section>
+
+					<section data-background-image="./img/books.jpg" data-transition="fade-in">
+						<div style="width:265px;position:absolute;left:40%;margin-top:45px">
+							<h5 style="font-size:.8em;color:rgba(255,255,255,.9)">
+								<span>finding</span>, understanding, and using it can be a challenge
+							</h5>
+						</div>
+					</section>
+
+					<section data-background-image="./img/silos.png" data-background-position="top" data-background-size="120%">
+						<div style="position:absolute;top:20px;left:20px;width:500px">
+							<h2 style="color:white;text-align:left">we might have a silo issue</h2>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						enter cedcap+cedsci
+					</section>
+					<section>
+						what is cedcap?
+					</section>
+					<section>
+						what is cedsci?
+					</section>
+					<section>
+						how can cedsci help cedcap?
+						<br>
+						and
+						<br>
+						how can cedcap help cedsci?
+					</section>
+				</section>
+
+				<section> <!--slide 2 -->
+
+					<section>
+						we need to talk about the tables
+					</section>
+
+					<section>
+						why do we (the bureau) create and disseminate tables?
+					</section>
+
+					<section>
+						check out this popular product
+						<hr>
+						<img class="stretch" style="border:none" src="./img/dp5.jpg" alt="">
+					</section>
+
+					<section>
+					  what is the purpose of a dp table?
+						<hr>
+						<ul>
+							<li>
+					    	what is it trying to do?
+							</li>
+							<li>
+								what is the intent behind it?
+							</li>
+						</ul>
+					</section>
+
+
+					<section>
+						it's based on a few assumptions about our customers:
+						<hr>
+						<ul style="text-align: center">
+							<li>
+					      they are going to consume it statically
+							</li>
+							<li>
+					      they're looking for a breadth of topics
+							</li>
+						</ul>
+					</section>
+					<section>
+						<p>
+							but why does it include some things and not others?
+						</p>
+						<hr>
+						<p style='font-style:italic'>
+					  	who said average commute should be in there?
+							<br>
+							what about when folks left for work?
+							<br>
+							what about the commuting pattern for women vets?
+						</p>
+					</section>
+
+					<section>well who's the customer?</section>
+					<section>
+						<ul>
+							<li>
+					  		what user research was done in crafting these products?
+							</li>
+							<li>
+					  		when was it done?
+							</li>
+							<li>
+					  		what feedback do we collect about them today?
+							</li>
+						</ul>
+					</section>
+					<section>
+						we have a few basic groups
+						<hr>
+						<ul style='font-size:.8em'>
+							<li>
+								<span style="background-color:green;color:white">Green</span>: Developers or people who want to do advanced modeling/programming with the data
+							</li>
+							<li>
+								<span style="background-color:lime">Lime</span>: AFF users who want to access tables and mainly volume data, and potentially build something or incorporate a layer into their own tool
+							</li>
+							<li>
+								<span style="background-color:yellow">Yellow</span>: Yellow - AFF users who want to download volume data and then run stats and/or manipulate data
+							</li>
+							<li>
+								<span style="background-color:orange">Orange</span>: Orange - Show me the #s on the site or let me download just the data I need but I'm not that technical
+							</li>
+							<li>
+								<span style="background-color:darkblue;color:white">Blue</span>: Small scale, informal data consumer, not familiar with Census data holdings and just wants to see raw number on the site
+							</li>
+						</ul>
+						<!-- <img class="stretch" style="border:none" src="./img/user-types.jpg" alt=""> -->
+					</section>
+					<section>
+						Key questions explored in analysis
+						<hr>
+						<ol>
+							<li>
+								How are different user types currently searching for and interacting with data?
+							</li>
+							<li>
+								What defines the “right” result format and content for different user types?
+							</li>
+							<li>
+								How can we create a user friendly search experience for people unfamiliar with Census data?
+							</li>
+						</ol>
+					</section>
+					<section>
+						<table style="width:100%;font-size:.5em">
+						  <tr>
+						    <th>User cluster</th>
+						    <th>Map needs/preferences</th>
+						    <th>Table needs/preferences</th>
+						  </tr>
+						  <tr>
+						    <td><span style="background-color:green;color:white">Green</span></td>
+						    <td>Likes the option for interactive maps, but still want source data/developer resources page</td>
+						    <td><strong>Not interested in tables</strong></td>
+						  </tr>
+						  <tr>
+						    <td><span style="background-color:lime;">Lime</span></td>
+								<td>Map is a nice to have, but not what they’re looking for; may explore a map if easy to use</td>
+						    <td>Uses tables, downloads and removes extraneous info</td>
+						  </tr>
+							<tr>
+						    <td><span style="background-color:yellow;">Yellow</span></td>
+								<td>Maps with downloadable shapefiles would be useful</td>
+								<td>Uses tables, downloads and removes extraneous info. <strong>Needs customizable tables</strong></td>
+							</tr>
+							<tr>
+						    <td><span style="background-color:orange;">Orange</span></td>
+								<td>No strong need for maps</td>
+								<td><strong>Needs customizable tables</strong></td>
+							</tr>
+							<tr>
+						    <td><span style="background-color:darkblue;color:white">Blue</span></td>
+								<td>Likes ability to view color coded map with their boundary of interest outlined, along side raw number, with comparison to similar places</td>
+								<td><strong>Not interested in tables</strong>, but may contain the answer MOE, median, mean, terms like “imputed” not helpful Will copy down info needed from tables manually</td>
+							</tr>
+						</table>
+
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						we get wrapped up in the delivery mechanisms
+					</section>
+
+					<section>
+						AFF, CBB, Quickfacts...
+					</section>
+
+					<section>
+						which has led to this
+						<img class="stretch" style="border:none" src="./img/current-state.png" alt="">
+					</section>
+
+					<section>
+						we need to get to this
+						<br>
+						<img class="stretch" style="border:none" src="./img/arch.png" alt="">
+
+					</section>
+
+					<section>
+						<p>
+							 But what about the fundamental question:
+							 <hr>
+							 <span class="italics">
+								 what do you think about this product?
+							 </span>
+						</p>
+					</section>
+					<section>
+						From our analytics we know some products are more popular than others.
+						<hr>
+							DP tables are popular.
+							<br>
+						 	so are GCTs.
+					</section>
+					<section>
+							Ok - why?
+					</section>
+					<section>
+				    is it their tasteful indentations?
+					</section>
+					<section>
+						<div>
+							<p style="font-family: helvetica; font-size:8.5em;background-color:#DA2727;color:white;font-style:oblique">Nope</p>
+						</div>
+					</section>
+					<section>
+						it's the context
+						<hr>
+						<!-- Who cares what the population is in one place if it's not in contrast to its siblings? Far more powerful to understand the distribution than a datum. -->
+						<ul>
+							<li>
+								they are easily digestable
+							</li>
+							<li>
+								DP tables provide a nice intro to a topic
+							</li>
+							<li>
+				      	GCTs are essentially a thematic map.
+							</li>
+							<li>
+				      	Also explains GRTs.
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>the landscape has shifted</section>
+					<section>
+						compute cycles are a commodity.
+					</section>
+					<section>
+						  a general users now have access to hardware and software that was previously only available on a supercomputer.
+					</section>
+					<section>
+						    data transactions are fast.
+					</section>
+					<section>
+						 it's cheaper to just pull everything and see what's up
+					</section>
+					<section>
+						tooling has changed
+					</section>
+					<section>
+					  languages have evolved
+						<hr>
+					  R/Python/js/julia/sas
+					</section>
+					<section>
+					  storage has evolved
+						<hr>
+					  large/cheap/linked data stores
+					</section>
+					<section>
+						workflows have evolved
+						<hr>
+						IDEs/collaboration/workbooks get better every day
+					</section>
+					<section>
+						methods have changed
+						<hr>
+					  unsupervised learning methods are the new hotness so now everyone is data starved.
+					</section>
+					<section>
+					  in their documentation, tensorflow actually points to a census data set as a starter guide.
+					</section>
+					<section>
+						BUT...
+					</section>
+					<section>
+						they point to a 3rd party for the data; and
+						<hr>
+						include a cleaning script because OF COURSE THEY NEEDED TO!!!!
+					</section>
+				</section>
+
+				<section>
+					<section>
+						so what are we doing about it?
+					</section>
+
+
+					<section>
+						the vision
+						<hr>
+							make Census data discoverable, accessible, and consumable
+					</section>
+
+					<section>
+						the challenge
+						<hr>
+						the data are numerous, complex, and not as interoperable as you might think
+						we also need to make it easier on ourselves
+					</section>
+
+					<section>
+						the approach
+						<hr>
+						start with the user, standardize everything, and then automate as much as possible.
+					</section>
+
+					<section data-background-color="#4E5057">
+						<img style="border:none;box-shadow:none;background:none;" width="30%" src="img/cedsci-logo.png" alt="">
+						<h3>CEDSCI</h3>
+					</section>
+
+					<section>
+						the approach
+						<br>
+						<img class="stretch" style="border:none" src="./img/detailed-process.png" alt="">
+					</section>
+
+					<section>
+						our building blocks
+						<br>
+						<img class="stretch" style="border:none" src="./img/edde-overview.png" alt="">
+					</section>
+
+					<section>
+						how we build
+						<br>
+						<img class="stretch" style="border:none" src="./img/edde-engine.png" alt="">
+					</section>
+
+					<section>
+						so what does this look like?
+					</section>
+
+					<section>
+						start with search
+						<img class="stretch" style="border:none" src="./img/pi13-homepage.png" alt="">
+					</section>
+
+					<section>
+						help folks understand what's available
+						<img class="stretch" style="border:none" src="./img/all-new.png" alt="">
+					</section>
+
+					<section>
+						provide easy ways into the data
+						<img class="stretch" style="border:none" src="./img/pi13-profile.png" alt="">
+					</section>
+
+					<section>
+						cover the basics
+						<img class="stretch" style="border:none" src="./img/tables-new.png" alt="">
+					</section>
+
+					<section>
+						extend the options
+						<img class="stretch" style="border:none" src="./img/map-new.png" alt="">
+					</section>
+
+					<section>
+						and go from this
+						<img class="stretch" style="border:none" src="./img/google-orig.png" alt="">
+					</section>
+
+					<section>
+						to this
+						<img class="stretch" style="border:none" src="./img/google-future.png" alt="">
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						but here's the kicker
+					</section>
+					<section>
+						we can only do so much
+					</section>
+					<section>
+						so we need enable others
+					</section>
+					<section>
+						third party devs are first class citizens
+						<img class="stretch" style="border:none" src="./img/devexLanding.png" alt="">
+					</section>
+					<section>
+						we are API first
+						<br>
+						<img class="stretch" style="border:none" src="./img/tables.png" alt="">
+					</section>
+					<section>
+						to get them working with data faster
+						<img class="stretch" style="border:none" src="./img/devexQueryBuilder.png" alt="">
+					</section>
+					<section>
+						we want to help them with examples
+						<img class="stretch" style="border:none" src="./img/devexSamplesHome.png" alt="">
+					</section>
+					<section>
+						and publish our standards
+						<img class="stretch" style="border:none" src="./img/dds.png" alt="">
+					</section>
+
+				</section>
+
+				<section>
+					<section data-background-image="./img/cedcap.jpg" data-transition="fade-in">
+					<!-- <section data-background="#000"> -->
+						<p id='readyp2'>
+							CEDCAP?!?
+						</p>
+					</section>
+				</section>
 			</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
+		<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+		<script src="js/particle.js"></script>
 
 		<script>
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
+				],
+
+				// // Parallax background image
+				// parallaxBackgroundImage: 'https://get.wallhere.com/photo/mountains-sunset-abstract-minimalism-sky-artwork-low-poly-sunrise-morning-horizon-atmosphere-dusk-upscaled-haze-cloud-dawn-grassland-plain-prairie-atmospheric-phenomenon-afterglow-ecosystem-219572.jpg', // e.g. "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg"
+				// parallaxBackgroundSize: 'auto', // CSS syntax, e.g. "2100px 900px" - currently only pixels are supported (don't use % or auto)
+				// parallaxBackgroundHorizontal: 200,
+				// parallaxBackgroundVertical: 50
+
 			});
 		</script>
 	</body>
